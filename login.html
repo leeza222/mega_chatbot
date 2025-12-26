@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ChitChat | Login</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body class="auth-body">
+
+<div class="auth-card">
+    <h2 id="auth-title">Login to ChitChat</h2>
+
+    <input id="email" type="email" placeholder="Email">
+    <input id="password" type="password" placeholder="Password">
+
+    <button id="auth-btn" onclick="login()">Login</button>
+
+    <p id="auth-msg"></p>
+
+    <p class="auth-switch">
+        Don’t have an account?
+        <span onclick="switchToRegister()">Register</span>
+    </p>
+</div>
+
+<script src="/static/script.js"></script>
+</body>
+</html>

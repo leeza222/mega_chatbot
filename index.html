@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>ChitChat</title>
+    <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+
+<div class="app">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <h2>ChitChat</h2>
+        <button onclick="newChat()">+ New Chat</button>
+        <div id="chat-list"></div>
+    </aside>
+
+    <!-- CHAT AREA -->
+    <main class="chat-area">
+        <div id="messages" class="messages"></div>
+
+        <!-- INPUT -->
+        <div class="input-area">
+            <input
+                id="message-input"
+                type="text"
+                placeholder="Send a message..."
+                onkeydown="handleEnter(event)"
+            />
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </main>
+
+</div>
+
+<script src="/static/script.js"></script>
+</body>
+</html>
